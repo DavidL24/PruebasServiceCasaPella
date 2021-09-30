@@ -16,10 +16,8 @@ use App\Http\Controllers\UsuarioController;
 |
 */
 
-Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});
-
-Route::get('usuario/{id}',[UsuarioController::class,'getUsuario']);
+//Route::get('usuario/{id}',[UsuarioController::class,'getUsuario']);
 
 Route::post('usuario/',[UsuarioController::class,'postUsuario']);
+
+
