@@ -40,7 +40,7 @@ class UsuarioController extends Controller
     
         $xml = simplexml_load_string($xmlstring, "SimpleXMLElement", LIBXML_NOCDATA);
         $json = json_encode($xml);
-        $array = json_decode($json,TRUE);
+        $array = json_decode($json,TRUE); 
       
         return $array;
       
